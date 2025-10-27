@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left" style="display:flex; align-items:center; gap:16px;">
+      <button id="hamburger" aria-label="Open menu" class="hamburger">
+        <!-- simple hamburger icon -->
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <a href="#" class="brand">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          class="logo"
+          alt="Netflix Logo"
+        />
+      </a>
+    </div>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+
+  <!-- Mobile nav overlay (hidden by default) -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </nav>
+  </div>
+
+  <!-- Banner / Hero -->
+  <main>
+    <section class="banner" role="region" aria-label="Featured">
+      <div class="banner-content">
+        <h1 class="banner-title">Stranger Things</h1>
+        <p class="banner-desc">
+          When a young boy vanishes, a small town uncovers a mystery involving secret experiments and a strange little girl.
+        </p>
+        <div class="banner-buttons">
+          <button class="btn play">▶ Play</button>
+          <button class="btn info">ℹ More Info</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rows -->
+    <section class="row">
+      <h2>Popular on Netflix</h2>
+      <div class="row-posters">
+        <img src="https://image.tmdb.org/t/p/w500/yuI9Pp9FeKCUxJzFOq9gxJ6h6eP.jpg" class="poster" alt="Poster 1">
+        <img src="https://image.tmdb.org/t/p/w500/6MKr3KgOLmzOP6MSuZERO41Lpkt.jpg" class="poster" alt="Poster 2">
+        <img src="https://image.tmdb.org/t/p/w500/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg" class="poster" alt="Poster 3">
+        <img src="https://image.tmdb.org/t/p/w500/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg" class="poster" alt="Poster 4">
+        <img src="https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg" class="poster" alt="Poster 5">
+      </div>
+    </section>
+
+    <section class="row">
+      <h2>Trending Now</h2>
+      <div class="row-posters">
+        <img src="https://image.tmdb.org/t/p/w500/tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg" class="poster" alt="Poster A">
+        <img src="https://image.tmdb.org/t/p/w500/p1F51Lvj3sMopG948F5HsBbl43C.jpg" class="poster" alt="Poster B">
+        <img src="https://image.tmdb.org/t/p/w500/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg" class="poster" alt="Poster C">
+        <img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg" class="poster" alt="Poster D">
+        <img src="https://image.tmdb.org/t/p/w500/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg" class="poster" alt="Poster E">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (optional) -->
+  <footer style="padding:30px 20px; text-align:center; color:#777;">
+    © Your Netflix Clone — Demo only
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
